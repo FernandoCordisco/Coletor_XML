@@ -1,0 +1,5 @@
+Importar planilha pela interface;
+Criar interface;
+Separar os xmls por pasta;
+Validar se os XMLs já estão na pasta de destino;
+Informar a série;
