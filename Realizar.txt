@@ -1,5 +1,13 @@
 Importar planilha pela interface;
 Criar interface;
-Separar os xmls por pasta;
-Validar se os XMLs já estão na pasta de destino;
 Informar a série;
+Zipar a pasta;
+Copiar o fiscalmanager.properties.
+
+
+Compactar em exe:
+pyinstaller --onefile ^
+ --add-data "planilha_COO.xlsx;." ^
+ --hidden-import pandas ^
+ --hidden-import openpyxl ^
+ Coletor_XMLs_Faltantes.py
