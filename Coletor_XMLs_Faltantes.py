@@ -4,12 +4,11 @@ import pandas as pd
 import shutil
 import sys
 
-if hasattr(sys, '_MEIPASS'):
-    pasta_atual = Path(sys._MEIPASS)
+if getattr(sys, 'frozen', False):
+    pasta_atual = Path(sys.executable).parent
 else:
     pasta_atual = Path(__file__).parent
     
-pasta_atual = Path(__file__).parent
 pasta_nfce = Path('C:/NFCE')
 pasta_destino = Path('C:/NFCE/Arquivos_XML') 
 planilha= pd.read_excel(pasta_atual / 'planilha_COO.xlsx', dtype=str) 

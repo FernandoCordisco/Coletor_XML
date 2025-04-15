@@ -5,7 +5,7 @@ a = Analysis(
     ['Coletor_XMLs_Faltantes.py'],
     pathex=[],
     binaries=[],
-    datas=[('planilha_COO.xlsx', '.')],
+    datas=[],
     hiddenimports=['pandas', 'openpyxl'],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['icone.ico'],
 )

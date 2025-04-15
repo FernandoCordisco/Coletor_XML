@@ -10,4 +10,5 @@ pyinstaller --onefile ^
  --add-data "planilha_COO.xlsx;." ^
  --hidden-import pandas ^
  --hidden-import openpyxl ^
+ --icon=icone.ico ^
  Coletor_XMLs_Faltantes.py
